@@ -1,0 +1,100 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  body {
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    height: 800px
+    
+  
+  }
+  #qrCode {
+    background-color: hsl(0, 0%, 100%);
+    padding: 5px;
+    height: 500px;
+    width: 270px;
+    max-width: 400px;
+    border: 0;
+    border-radius: 20px;
+  }
+  img {
+    height: 250px;
+    width: 250px;
+    border: 0;
+    border-radius: 15px;
+    padding: 0;
+    
+  }
+  
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+
+  .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+  }
+  .attribution a { 
+    color: hsl(228, 45%, 44%);
+  }
+  
+  h1, .attribution {
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+  }
+  p {
+    font-weight: 400;
+    color: hsl(220, 15%, 55%);
+  }
+
+  /* Styles for Mobile Devices (max width 375px) */
+@media (max-width: 375px) {
+    body {
+        max-height: 500px;
+        width: 150px;
+        
+
+
+    }
+}
